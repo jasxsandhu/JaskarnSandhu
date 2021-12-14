@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <div id="logo">
+        <a href="index.html"><img src="assets/logo.png"></a>
+    </div>
+
+    <div class="form">
+        <div style="font-size: 30px; margin-bottom: 50px; margin-top: 30px;">Contact Me</div>
+
+        <form action="">
+            <label for="fn">First Name</label><br>
+            <input type="text" name="name" id="name" required><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required><br><br>
+
+            <label for="address">Address</label><br>
+            <input type="text" name="address" id="address" required><br>
+            <label for="city">City</label><br>
+            <input type="text" name="city" id="city" required><br>
+            <label for="pcode">Postal Code</label><br>
+            <input type="text" name="pcode" id="pcode" required><br><br>
+
+            <span style="font-size: 19px;">Purpose</span><br><br>
+            <input type="radio" name="purpose" id="question" onchange="question()" required>
+            <label for="question">Question</label><br>
+            <input type="radio" name="purpose" id="comment" onclick="comment()" required>
+            <label for="comment">Comment</label><br>
+            <input type="radio" name="purpose" id="hiring" required>
+            <label for="hiring">Hiring</label><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+
+    </div>
+</body>
+
+</html>
